@@ -16,13 +16,13 @@
     </p>
 
     <div class="card-actions justify-end">
-      <button class="btn btn-circle !btn-outline btn-secondary">
+      <button class="btn btn-circle !btn-outline btn-secondary" aria-label="Open todo for edit">
         <ng-icon name="heroPencil" size="1.5em" (click)="editTodoDialog.openForEdit(todo)"></ng-icon>
       </button>
-      <button class="btn btn-circle !btn-outline btn-secondary">
+      <button class="btn btn-circle !btn-outline btn-secondary" aria-label="Add users to todo">
         <ng-icon name="heroUserPlus" size="1.5em" (click)="addUserDialog.open()"></ng-icon>
       </button>
-      <button class="btn btn-circle !btn-outline btn-accent">
+      <button class="btn btn-circle !btn-outline btn-accent" aria-label="Delete todo">
         <ng-icon name="heroTrash" size="1.5em" (click)="deleteTodo(todo?.id)"></ng-icon>
       </button>
     </div>

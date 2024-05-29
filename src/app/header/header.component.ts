@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { NgIconComponent, provideIcons } from '@ng-icons/core';
 import { heroBellAlertSolid, heroBellSolid } from '@ng-icons/heroicons/solid';
 import { Observable, of, interval, startWith, switchMap, pairwise, map } from 'rxjs';
@@ -16,7 +16,8 @@ import { CookieService } from 'ngx-cookie-service';
   standalone: true,
   imports: [
     CommonModule,
-    NgIconComponent
+    NgIconComponent,
+    RouterModule
   ],
   viewProviders: [
     provideIcons({ heroBellSolid, heroBellAlertSolid })
